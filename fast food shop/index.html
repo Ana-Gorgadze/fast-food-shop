@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5acd0c61c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="./img1.png" alt="">
+        <a href="#menuprice"><input type="text" id="search-item" placeholder="Search..." onkeyup="search()"></a>
+        <h2><i class="fa-solid fa-bars"></i></h2>
+        <h2><i class="fa-solid fa-basket-shopping" id="cart-icon" style="color: #FFD43B;"></i></h2>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div class="cart-content">
+
+                <div class="cart-box">
+                    <img src="img3.jpg" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">burger</div>
+                        <div class="cart-price">10$</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">0$</div>
+            </div>
+
+            <button type="button" class="btn-buy">Buy Now</button>
+
+            <i class="fa-solid fa-x" id="close-cart"></i>
+        </div>
+    </header><br>
+    
+    <div class="container">
+        
+        <div class="div1">
+            <img src="./img2.jpg" alt="">
+            <div>
+                <h1>Quick Bite</h1>
+                <h3>where Taste testorn the fast lane</h3>
+            </div>
+        </div>
+        <div class="foodmenu">
+            <h2>FOOD MENU</h2>
+            <div class="foods">
+                <div class="1food">
+                    <img src="./img3.jpg" alt="">
+                    <h3>burger</h3>
+                </div>
+                <div class="2food">
+                    <img src="./img4.jpg" alt="">
+                    <h3>cheez burger</h3>
+                </div>
+                <div class="3food">
+                    <img src="./img5.jpg" alt="">
+                    <h3>small burger</h3>
+                </div>
+                <div class="4food">
+                    <img src="./img6.jpg" alt="">
+                    <h3>fries</h3>
+                </div>
+                <div class="5food">
+                    <img src="./img7.jpg" alt="">
+                    <h3>large fries</h3>
+                </div>
+                <div class="5food">
+                    <img src="./img8.jpg" alt="">
+                    <h3>mini burger</h3>
+                </div>
+                <div class="5food">
+                    <img src="./img9.jpg" alt="">
+                    <h3>coca cola</h3>
+                </div>
+                <div class="5food">
+                    <img src="./img10.jpg" alt="">
+                    <h3>fanta</h3>
+                </div>
+                <div class="5food">
+                    <img src="./img11.jpg" alt="">
+                    <h3>ketchup</h3>
+                </div>
+                <div class="5food">
+                    <img src="./img12.jpg" alt="">
+                    <h3>pizza</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="menuprice" class="menuprice">
+            <h2>MENU PRICE</h2>
+            <div class="foodss">
+                <div class="food">
+                    <img src="./img3.jpg" alt="">
+                    <h4>burger</h4>
+                    <div>
+                        <label>10$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img4.jpg" alt="">
+                    <h4>cheez burger</h4>
+                    <div>
+                        <label>15$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img5.jpg" alt="">
+                    <h4>small burger</h4>
+                    <div>
+                        <label>7$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img6.jpg" alt="">
+                    <h4>frise</h4>
+                    <div>
+                        <label>5$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img7.jpg" alt="">
+                    <h4>large frise</h4>
+                    <div>
+                        <label>10$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img8.jpg" alt="">
+                    <h4>mini burger</h4>
+                    <div>
+                        <label>4$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img9.jpg" alt="">
+                    <h4>coca cola</h4>
+                    <div>
+                        <label>7$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img10.jpg" alt="">
+                    <h4>fanta</h4>
+                    <div>
+                        <label>4$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img11.jpg" alt="">
+                    <h4>ketchup</h4>
+                    <div>
+                        <label>3$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="./img12.jpg" alt="">
+                    <h4>pizza</h4>
+                    <div>
+                        <label>17$</label>
+                        <h6><i class="fa-solid fa-basket-shopping add-cart" style="color: #FFD43B;"></i></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
